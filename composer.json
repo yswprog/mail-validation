@@ -1,0 +1,24 @@
+{
+  "name": "yswprog/mail-validation",
+  "description": "E-Mail validation to check email is active or not",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yuswa",
+      "email": "yswprog@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "YProg\\MailValidation\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.2|^7.3|^2.4|8.*",
+    "vlucas/phpdotenv": "5.4.x-dev"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev"
+}
