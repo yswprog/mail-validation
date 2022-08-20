@@ -154,7 +154,7 @@ trait Verification
             if ($this->stream === false) {
 
                 if ($errCode == 0) {
-                    $this->setMessage('Problem initializing the socket');
+                    $this->setMessage("Problem initializing the socket for {$this->email}");
                     return false;
                 }
 
@@ -174,7 +174,7 @@ trait Verification
         }
 
         if ($this->stream === false) {
-            $this->setMessage("All connection fails");
+            $this->setMessage("All connections to {$this->email} fail");
             return false;
         }
 
